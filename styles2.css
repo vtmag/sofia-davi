@@ -68,7 +68,7 @@ footer nav ul li a:hover {
 }
 
 .hover-animate:hover {
-    transform: translateX(5px); /* Κίνηση κατά 5px προς τα δεξιά */
+    transform: translateX(5px); 
 }
 
 .social-icons {

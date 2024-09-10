@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToTopButton = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) { // Εμφανίζεται όταν ο χρήστης έχει κάνει scroll κάτω από 300px
+        if (window.scrollY > 300) { 
             backToTopButton.classList.add('show');
         } else {
             backToTopButton.classList.remove('show');
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Ομαλή κύλιση προς την κορυφή
+            behavior: 'smooth' 
         });
     });
 });
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
     const stickyHeader = document.querySelector('.sticky-header');
 
-    // Βεβαιωθείτε ότι το sticky header περιέχει μόνο το logo και το burger menu στο κινητό
+    
     window.addEventListener('resize', () => {
         if (window.innerWidth <= 768) {
             stickyHeader.querySelector('.nav-links').style.display = 'none';

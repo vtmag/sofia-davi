@@ -36,8 +36,8 @@ body {
 }
 
 .profile {
-    text-align: center; /* Κεντράρει το περιεχόμενο */
-    margin-bottom: 10px; /* Απόσταση από τα άλλα στοιχεία */
+    text-align: center; 
+    margin-bottom: 10px; 
 }
 
 .booking-section {
@@ -59,8 +59,8 @@ body {
 
 .title {
     font-size: 1.1em;
-    color: #340004; /* Χρώμα για τον τίτλο */
-    margin: 0; /* Εξασφαλίζει ότι δεν υπάρχει επιπλέον κενό */
+    color: #340004; 
+    margin: 0; 
     display: inline-block;
     position: relative;
     text-align: center;
@@ -69,7 +69,7 @@ body {
     font-style: normal;
     white-space: nowrap;
     border-right: 3px solid;
-    width:32ch; /* Καθορισμός πλάτους με βάση τον αριθμό χαρακτήρων */
+    width:32ch; 
     letter-spacing: 0.15em;
     animation: typing 4s steps(40, end), blink-caret 0.75s step-end 5s, disappear-caret 0s step-end 5s forwards;
     
@@ -308,7 +308,7 @@ body {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Δύο στήλες με ίσο πλάτος */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 90px;
     margin-top: 20px;
@@ -319,17 +319,17 @@ body {
 @media (max-width: 768px) {
     .service-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Μία στήλη για μικρές οθόνες */
+    grid-template-columns: 1fr; 
     gap: 20px;
-    justify-items: center; /* Κεντράρισμα των καρτών */
-    padding: 10px; /* Μείωση padding για να μην κόβονται οι κάρτες */
+    justify-items: center; 
+    padding: 10px; 
 }
 
-.service-card {
-    width: 80%; /* Να καταλαμβάνει όλο το πλάτος του container */
-    max-width: 300px; /* Όριο στο μέγιστο πλάτος της κάρτας */
-    margin: 0 auto; /* Κεντράρισμα της κάρτας */
-}
+    .service-card {
+        width: 80%; 
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
 }
 
 
@@ -379,7 +379,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* Στυλ για το κουμπί "Μάθετε Περισσότερα" */
+/*  "Μάθετε Περισσότερα" */
 .learn-more-btn {
     display: inline-block;
     margin-top: 10px;
@@ -396,19 +396,19 @@ body {
     transform: scale(1.05);
 }
 
-/* Απόκρυψη του κουμπιού από προεπιλογή */
+
 .service-card .learn-more-btn {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px); /* Ελαφρά μετατόπιση προς τα κάτω */
+    transform: translateY(10px); 
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
-/* Εμφάνιση του κουμπιού όταν γίνεται hover πάνω στο grid */
+
 .service-card:hover .learn-more-btn {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Επαναφορά στη φυσική του θέση */
+    transform: translateY(0); 
 }
 
 
@@ -598,7 +598,7 @@ footer {
 }
 
 .hover-animate:hover {
-    transform: translateX(5px); /* Κίνηση κατά 5px προς τα δεξιά */
+    transform: translateX(5px); 
 }
 
 .social-icons {
@@ -634,7 +634,7 @@ footer {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    z-index: 1000; /* Βεβαιώσου ότι το κουμπί είναι πάνω από άλλα στοιχεία */
+    z-index: 1000; 
 }
 
 .back-to-top.show {
@@ -671,7 +671,7 @@ footer {
 }
 
 .accessibility-icon i {
-    pointer-events: none; /* Εξασφαλίζει ότι το hover εφαρμόζεται στο κουμπί και όχι στο εικονίδιο */
+    pointer-events: none; /
 }
 
 .accessibility-btn:hover {
@@ -697,7 +697,7 @@ footer {
             width: 0;
         }
         to {
-            width: 32ch; /* Το πλάτος αυξάνεται μέχρι να καλύψει όλους τους χαρακτήρες */
+            width: 32ch; 
         }
     }
     
@@ -748,7 +748,7 @@ footer {
     }
 
     .service-grid {
-        grid-template-columns: 1fr; /* Κάνει τις κάρτες να εμφανίζονται σε μία στήλη */
+        grid-template-columns: 1fr; 
         
     }
 
@@ -844,17 +844,17 @@ select[style*="color: #ccc"] {
 }
 .faq-section {
     display: flex;
-    justify-content: center; /* Κεντράρισμα οριζόντια */
-    align-items: center; /* Κεντράρισμα κάθετα */
-    flex-direction: column; /* Κάθετη διάταξη των στοιχείων */
-    min-height: 100vh; /* Το ελάχιστο ύψος να καλύπτει το ύψος του παραθύρου */
-    background-color: #f7f7f7; /* Προαιρετικό χρώμα φόντου */
-    padding: 20px; /* Προσθέτει κενό γύρω από το περιεχόμενο */
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #f7f7f7; 
+    padding: 20px; 
 }
 
 .faq-section h2 {
     text-align: center;
-    margin-bottom: 30px; /* Αφήνει χώρο κάτω από τον τίτλο */
+    margin-bottom: 30px; 
 }
 
 .faq-item {
@@ -862,9 +862,9 @@ select[style*="color: #ccc"] {
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ελαφριά σκιά για να ξεχωρίζει */
-    max-width: 800px; /* Περιορισμός του πλάτους */
-    width: 100%; /* Προσαρμογή στο διαθέσιμο χώρο */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    width: 100%; 
 }
 
 .faq-item h3 {
@@ -877,12 +877,12 @@ select[style*="color: #ccc"] {
 }
 
 .faq-item a {
-    color: #5C9EAD; /* Χρώμα συνδέσμου */
-    text-decoration: none; /* Αφαίρεση της υπογράμμισης */
+    color: #5C9EAD; 
+    text-decoration: none; 
 }
 
 .faq-item a:hover {
-    text-decoration: underline; /* Υπογράμμιση του συνδέσμου όταν κάνεις hover */
+    text-decoration: underline; 
 }
 
 
@@ -914,7 +914,7 @@ select[style*="color: #ccc"] {
 
 .faq-item.active p {
     padding-top: 10px;
-} */
+} 
 
 footer nav ul {
     list-style: none;
@@ -936,14 +936,6 @@ footer nav ul li a:hover {
 }
 
 
-
-
-
-
-
-/* Στυλ για το κύριο μενού */
-
-
 .navbar ul li {
     position: relative;
 }
@@ -955,7 +947,7 @@ footer nav ul li a:hover {
     display: block;
     position: absolute;
     margin-top: 5px;
-    opacity: 0; /* Αρχικά αόρατο */
+    opacity: 0; 
     visibility: hidden; 
     background-color: #7c7755;
     min-width: 220px;
@@ -964,10 +956,10 @@ footer nav ul li a:hover {
     z-index: 1;
     top: 100%;
     left: 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Προσθέτει σκιά */
-    border: 1px solid #ddd; /* Προσθέτει όριο γύρω από το dropdown */
-    border-radius: 4px; /* Στρογγυλεύει τις γωνίες */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Μετάβαση μόνο κατά το άνοιγμα */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
 .dropdown-content li {
@@ -981,20 +973,20 @@ footer nav ul li a:hover {
     display: block;
     text-align: left;
     font-size: 18px;
-    border-bottom: 1px solid #eee; /* Διαχωριστικό γραμμή μεταξύ των στοιχείων */
+    border-bottom: 1px solid #eee; 
 }
 
 .dropdown-content li a:last-child {
-    border-bottom: none; /* Αφαιρεί την τελευταία γραμμή διαχωρισμού */
+    border-bottom: none; 
 }
 
 
-/* Εμφάνιση του υπομενού όταν κάνεις hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
-    opacity: 1; /* Γίνεται ορατό */
-    visibility: visible; /* Εμφανίζεται στη ροή της σελίδας */
-    height: auto; /* Ύψος αυτόματο για να περιλαμβάνει το περιεχόμενο */
+    opacity: 1; 
+    visibility: visible; 
+    height: auto; 
     pointer-events: auto;
 
 
@@ -1036,7 +1028,7 @@ footer nav ul li a:hover {
     align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
-    flex-wrap: wrap; /* Για καλύτερη ευελιξία σε μικρότερες οθόνες */
+    flex-wrap: wrap; 
 }
 
 .text-content {
@@ -1056,7 +1048,7 @@ footer nav ul li a:hover {
 .image-content img {
     max-width: 100%;
     height: 520px;
-    border-radius: 10px; /* Ελαφριά καμπυλότητα της εικόνας */
+    border-radius: 10px; 
 }
 
 .biography h2 {
